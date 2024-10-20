@@ -1,4 +1,4 @@
-const targetDate = new Date("2023-10-21T11:00:00"); // Set the target date and time (October 20, 2023, 11:00 AM)
+const targetDate = new Date("2016-01-17T11:00:00"); // Set the target date and time (October 20, 2023, 11:00 AM)
 
 function updateCountdown() {
   const now = new Date();
