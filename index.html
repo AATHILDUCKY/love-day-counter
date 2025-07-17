@@ -8,49 +8,121 @@
       href="https://raw.githubusercontent.com/AATHILDUCKY/ethical-hacking-short-notes/main/aathil%20ducky.png"
       type="image/x-icon"
     />
-    <title>aathil ducky shaniya Love Journey (2023.10.21)</title>
+    <title>Aathil & Ducky's Love Journey (2023.10.21)</title>
     <meta
       name="description"
       content="Join Aathil and Ducky on their beautiful love journey with Shaniya.(2023.10.21)"
     />
     <meta
       name="keywords"
-      content="aathil, ducky, love, shaniya, love journey, love story, relationship journey, 2023.8.21"
+      content="aathil, ducky, love, shaniya, love journey, love story, relationship journey, 2023.10.21"
     />
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <style>
+      .love-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+      }
+      .love-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(236, 72, 153, 0.3);
+      }
+      .highlight {
+        color: #ec4899;
+        font-weight: bold;
+      }
+      .heart {
+        color: #ec4899;
+        animation: pulse 1.5s infinite;
+      }
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+      }
+    </style>
   </head>
-  <body>
-    <div
-      class="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white"
-    >
-      <div class="header text-center">
-        <h1 class="text-4xl font-bold mb-4">Our Love Began</h1>
-        <p id="countdown" class="text-3xl font-medium"></p>
+  <body class="bg-gray-900 text-white min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+      <header class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Aathil <span class="heart">❤</span> Ducky
+        </h1>
+        <p class="text-xl text-pink-400">Our Love Journey Since 2023.10.21</p>
+      </header>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <!-- Love Duration Card -->
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">Our Love Duration</h2>
+          <div class="space-y-2">
+            <p><span class="highlight" id="love-years">0</span> years</p>
+            <p><span class="highlight" id="love-days">0</span> days</p>
+            <p><span class="highlight" id="love-hours">0</span> hours</p>
+            <p><span class="highlight" id="love-minutes">0</span> minutes</p>
+            <p><span class="highlight" id="love-seconds">0</span> seconds</p>
+          </div>
+        </div>
+
+        <!-- Next Anniversary Card -->
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">Next Anniversary</h2>
+          <div class="space-y-2">
+            <p><span class="highlight" id="anniv-days">0</span> days</p>
+            <p><span class="highlight" id="anniv-hours">0</span> hours</p>
+            <p><span class="highlight" id="anniv-minutes">0</span> minutes</p>
+            <p><span class="highlight" id="anniv-seconds">0</span> seconds</p>
+          </div>
+        </div>
+
+        <!-- Aathil's Birthday Card -->
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">Aathil's Birthday</h2>
+          <p class="mb-4">December 23 (2000)</p>
+          <div class="space-y-2">
+            <p><span class="highlight" id="aathil-days">0</span> days</p>
+            <p><span class="highlight" id="aathil-hours">0</span> hours</p>
+            <p><span class="highlight" id="aathil-minutes">0</span> minutes</p>
+          </div>
+        </div>
+
+        <!-- Ducky's Birthday Card -->
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">Ducky's Birthday</h2>
+          <p class="mb-4">April 22 (2007)</p>
+          <div class="space-y-2">
+            <p><span class="highlight" id="ducky-days">0</span> days</p>
+            <p><span class="highlight" id="ducky-hours">0</span> hours</p>
+            <p><span class="highlight" id="ducky-minutes">0</span> minutes</p>
+          </div>
+        </div>
+
+        <!-- Anniversary Date Card -->
+        <div class="love-card rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-center">Special Date</h2>
+          <p class="text-lg mb-2">Started Dating:</p>
+          <p class="highlight">October 21, 2023</p>
+          <p class="text-lg mt-4 mb-2">Time:</p>
+          <p class="highlight">11:00 PM</p>
+        </div>
+
+        <!-- Love Message Card -->
+        <div class="love-card rounded-xl p-6 flex items-center justify-center">
+          <div class="text-center">
+            <p class="text-2xl mb-4">Every moment with you is special</p>
+            <span class="heart text-4xl">❤</span>
+          </div>
+        </div>
       </div>
-      <div class="content flex flex-col items-center">
-        <p class="text-xl mt-4 leading-10">
-          We've been together for
-          <span
-            class="box-sec border-white border-2 rounded-md p-0.5 pr-1 pl-1 mr-1"
-          >
-            <span id="days" class="text-pink-400"></span> days </span
-          >,<br />
-          <span
-            class="box-sec border-white border-2 rounded-md p-0.5 pr-1 pl-1 mr-1"
-          >
-            <span id="hours" class="text-pink-400"></span> hours</span
-          >, and
-          <span
-            class="box-sec border-white border-2 rounded-md p-0.5 pr-1 pl-1 mr-1"
-          >
-            <span id="minutes" class="text-pink-400"></span> minutes
-          </span>
-          (as of now).
-        </p>
-      </div>
+
+      <footer class="text-center text-gray-400 mt-12">
+        <p>Created with love by Aathil & Ducky</p>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>
